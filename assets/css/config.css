@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+body{
+    font-family:Poppins, Arial, Helvetica, sans-serif;
+}
+
+.area-menu-hamburguer{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.area-menu-hamburguer .barra{
+    height: 6px;
+    background-color: #fff;
+    transform-origin: center;
+    transition: 0.2s;
+}
+.ativar .barra:nth-child(1){
+    transform: translateY(12px) rotate(45deg);
+}
+.ativar .barra:nth-child(2){
+    width: 0;
+}
+.ativar .barra:nth-child(3){
+    transform: translateY(-12px) rotate(-45deg);
+}
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    padding: 0 5px;
+ 
+}
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.btn{
+    display: block;
+    padding: 10px 20px;
+}
+.ptb-20{
+    padding: 20px 5px;
+}
+
+.title{
+    display: flex;
+    padding: 50px 0;
+    flex: 1;
+    justify-content: center;
+    align-items:center ;
+    margin: 20px;
+}
+.title h2, .title h2 span{
+    font-size: 60px;
+    color: purple;
+
+}
+.tag{
+    color:blue;
+    background-color: greenyellow;
+}
+
+p.subTitle{
+    text-align: center;
+}
+
+/* cards em serviços e benefícios */
+
+.grid-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    margin: 50px 0;
+
+}
+.card{
+    overflow: hidden;
+    text-align: center;
+}
+.card .card-image img{
+    width: auto;
+    height: 200px;
+}
+.card .card-title{
+    padding: 10px 0;
+}
+.card .card-title h4{
+    font-size: 1.5em;
+    color: purple;
+}
+
+.card .card-description{
+    font-size: 0.9em;
+    line-height: 15px;
+    padding: 20px
+}
